@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  #bannerContent {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  #bannerContent h1 {
+    font-size: 1.3rem !important;
+  }
+
+  #bannerContent h2 {
+    font-size: 1.8rem !important;
+  }
+
+  #bannerContent p {
+    font-size: 0.95rem !important;
+  }
+
+  #bannerContent a {
+    width: 160px !important;
+  }
+}

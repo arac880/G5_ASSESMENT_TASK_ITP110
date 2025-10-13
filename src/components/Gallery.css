@@ -1,0 +1,18 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-success,
+.btn-outline-success {
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover,
+.btn-outline-success:hover {
+  transform: scale(1.05);
+}

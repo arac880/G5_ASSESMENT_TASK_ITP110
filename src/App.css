@@ -46,3 +46,231 @@
  height: 400px;
  padding: 20px;
 }
+
+/* Admission Form */
+.admission-page {
+  font-family: 'Segoe UI', sans-serif;
+  color: #222;
+  line-height: 1.7;
+  background-color: #fff;
+}
+
+.admission-header {
+  height: 340px;
+  background: linear-gradient(rgba(0, 50, 0, 0.6), rgba(0, 50, 0, 0.6)),
+    url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Pamantasan_ng_Cabuyao.jpg")
+      center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 60px 60px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 0.3rem;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #f0f0f0;
+}
+
+.header-line {
+  width: 80px;
+  height: 3px;
+  background: #ffd700;
+  margin: 15px auto;
+  border-radius: 5px;
+}
+
+.header-sub {
+  font-style: normal !important;
+  color: #e0e0e0;
+  font-size: 1rem;
+}
+
+.requirements {
+  padding: 70px 10%;
+  background: #f8f8f8;
+  text-align: center;
+}
+
+.requirements h2 {
+  color: #0b6623;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.requirements .intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+.req-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  color: #0b6623;
+  margin-bottom: 12px;
+}
+
+.card ul {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.process {
+  padding: 80px 10%;
+  background: white;
+  text-align: center;
+}
+
+.process h2 {
+  color: #0b6623;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.process-timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+  border-left: 3px solid #0b6623;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.circle {
+  background: #0b6623;
+  color: white;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -18px;
+  top: 0;
+  box-shadow: 0 0 0 4px #d8efd1;
+}
+
+.step-content {
+  margin-left: 50px;
+  text-align: left;
+}
+
+.step-content h3 {
+  color: #0b6623;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.step-content p {
+  color: #555;
+  margin: 0;
+}
+
+.download-form {
+  background: linear-gradient(180deg, #0b6623 0%, #0a5a1f 100%);
+  color: #fff;
+  padding: 100px 10%;
+  text-align: center;
+  position: relative;
+  border-radius: 60px 60px 0 0;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.download-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.download-form h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.download-form p {
+  font-size: 1.1rem;
+  color: #e6e6e6;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #0b6623;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 14px 40px;
+  border-radius: 40px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.download-btn:hover {
+  background-color: #f4f4f4;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.25);
+}
+
+@media (max-width: 768px) {
+  .req-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process-timeline {
+    padding-left: 15px;
+  }
+
+  .step-content {
+    margin-left: 45px;
+  }
+}

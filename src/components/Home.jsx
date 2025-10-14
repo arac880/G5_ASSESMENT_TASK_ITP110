@@ -4,7 +4,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <>
+    <div className="home-container">
     <div
       className="hero-section position-relative text-white"
       style={{
@@ -78,8 +78,7 @@ function Home() {
         </div>
       </div>
     </div>
-    </>
-    
+    </div>
   );
 }
 export default Home;

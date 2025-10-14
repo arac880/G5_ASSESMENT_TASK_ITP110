@@ -47,7 +47,7 @@ function Contact() {
       </div>
 
       {/* Contact Form */}
-      <div className="card shadow-lg p-4">
+      <div className="card-contact shadow-lg p-4">
         <h4 className="mb-3">Send Us a Message</h4>
         <form onSubmit={handleSubmit}>
           <div className="row">

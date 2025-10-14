@@ -57,14 +57,14 @@
 
 .admission-header {
   height: 340px;
-  background: linear-gradient(rgba(0, 50, 0, 0.6), rgba(0, 50, 0, 0.6)),
+    background: linear-gradient(180deg, #0b6623b7 0%, #0a5a1fdf 100%),
     url("https://upload.wikimedia.org/wikipedia/commons/2/2b/Pamantasan_ng_Cabuyao.jpg")
       center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
   border-radius: 0 0 60px 60px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -90,7 +90,7 @@
 .header-line {
   width: 80px;
   height: 3px;
-  background: #ffd700;
+  background: #04480e;
   margin: 15px auto;
   border-radius: 5px;
 }

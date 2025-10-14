@@ -52,7 +52,7 @@ function About() {
       </div>
 
       <footer className="about-footer">
-        <p>“Proud to be Cabuyeño Scholar”</p>
+        <p>“Proud to be Dangal ng Bayan”</p>
       </footer>
     </div>
   );

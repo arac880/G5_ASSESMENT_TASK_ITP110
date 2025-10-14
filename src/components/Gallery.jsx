@@ -4,66 +4,67 @@ import "./Gallery.css";
 
 function Gallery() {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [visibleCount, setVisibleCount] = useState(3); // show 3 initially
+  const [visibleCount, setVisibleCount] = useState(6); // show 6 initially
 
   const images = [
-    {
-      id: 1,
-      src: "https://via.placeholder.com/300x200?text=Campus+Life+1",
-      title: "Campus Life 1",
-      category: "Campus Life",
-    },
-    {
-      id: 2,
-      src: "https://via.placeholder.com/300x200?text=Event+1",
-      title: "Event 1",
-      category: "Events",
-    },
-    {
-      id: 3,
-      src: "https://via.placeholder.com/300x200?text=Academics+1",
-      title: "Academics 1",
-      category: "Academics",
-    },
-    {
-      id: 4,
-      src: "https://timogkatagalugan.com/wp-content/uploads/2023/03/photo_2023-03-29_11-06-36.jpg",
-      title: "Campus Life 2",
-      category: "Campus Life",
-    },
-    {
-      id: 5,
-      src: "https://timogkatagalugan.com/wp-content/uploads/2023/03/photo_2023-03-29_11-06-36.jpg",
-      title: "Event 2",
-      category: "Events",
-    },
-    {
-      id: 6,
-      src: "https://timogkatagalugan.com/wp-content/uploads/2023/03/photo_2023-03-29_11-06-36.jpg",
-      title: "Academics 2",
-      category: "Academics",
-    },
-    {
-      id: 7,
-      src: "https://via.placeholder.com/300x200?text=Campus+Life+3",
-      title: "Campus Life 3",
-      category: "Campus Life",
-    },
-    {
-      id: 8,
-      src: "https://via.placeholder.com/300x200?text=Event+3",
-      title: "Event 3",
-      category: "Events",
-    },
-    {
-      id: 9,
-      src: "https://via.placeholder.com/300x200?text=Academics+3",
-      title: "Academics 3",
-      category: "Academics",
-    },
+    // Campus Life - Brigada
+    { id: 1, src: new URL("../assets/Images/brigada1.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    { id: 2, src: new URL("../assets/Images/brigada2.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    { id: 3, src: new URL("../assets/Images/brigada3.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    { id: 4, src: new URL("../assets/Images/brigada4.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    { id: 5, src: new URL("../assets/Images/brigada5.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    { id: 6, src: new URL("../assets/Images/brigada6.jpg", import.meta.url).href, title: "Brigada Eskwela", category: "Campus Life", event: "Brigada" },
+    
+    // Campus Life - CCS Party
+    { id: 7, src: new URL("../assets/Images/ccscapade1.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    { id: 8, src: new URL("../assets/Images/ccscapade2.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    { id: 9, src: new URL("../assets/Images/ccscapade3.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    { id: 10, src: new URL("../assets/Images/ccscapade4.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    { id: 11, src: new URL("../assets/Images/ccscapade5.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    { id: 12, src: new URL("../assets/Images/ccscapade6.jpg", import.meta.url).href, title: "CCS Party", category: "Campus Life", event: "CCS Party" },
+    
+    // Events - Teachers' Day
+    { id: 13, src: new URL("../assets/Images/teacher'sday1.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    { id: 14, src: new URL("../assets/Images/teacher'sday2.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    { id: 15, src: new URL("../assets/Images/teacher'sday3.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    { id: 16, src: new URL("../assets/Images/teacher'sday4.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    { id: 17, src: new URL("../assets/Images/teacher'sday5.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    { id: 18, src: new URL("../assets/Images/teacher'sday6.jpg", import.meta.url).href, title: "Teachers' Day", category: "Events", event: "Teachers' Day" },
+    
+    // Academics - ACA Assembly
+    { id: 19, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲1.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    { id: 20, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲2.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    { id: 21, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲3.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    { id: 22, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲4.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    { id: 23, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲5.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    { id: 24, src: new URL("../assets/Images/𝗔𝗖𝗔𝘀𝘀𝗲𝗺𝗯𝗹𝗲6.jpg", import.meta.url).href, title: "ACA Assembly", category: "Academics", event: "ACA Assembly" },
+    
+    // Academics - Graduation
+    { id: 25, src: new URL("../assets/Images/graduation1.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    { id: 26, src: new URL("../assets/Images/graduation2.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    { id: 27, src: new URL("../assets/Images/graduation3.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    { id: 28, src: new URL("../assets/Images/graduation4.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    { id: 29, src: new URL("../assets/Images/graduation5.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    { id: 30, src: new URL("../assets/Images/graduation6.jpg", import.meta.url).href, title: "Graduation", category: "Academics", event: "Graduation" },
+    
+    // Community Outreach - Donation Drive
+    { id: 31, src: new URL("../assets/Images/donationdrive1.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    { id: 32, src: new URL("../assets/Images/donationdrive2.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    { id: 33, src: new URL("../assets/Images/donationdrive3.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    { id: 34, src: new URL("../assets/Images/donationdrive4.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    { id: 35, src: new URL("../assets/Images/donationdrive5.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    { id: 36, src: new URL("../assets/Images/donationdrive6.jpg", import.meta.url).href, title: "Donation Drive", category: "Community Outreach", event: "Donation Drive" },
+    
+    // Community Outreach - Blood Donation
+    { id: 37, src: new URL("../assets/Images/blooddonation1.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
+    { id: 38, src: new URL("../assets/Images/blooddonation2.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
+    { id: 39, src: new URL("../assets/Images/blooddonation3.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
+    { id: 40, src: new URL("../assets/Images/blooddonation4.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
+    { id: 41, src: new URL("../assets/Images/blooddonation5.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
+    { id: 42, src: new URL("../assets/Images/blooddonation6.jpg", import.meta.url).href, title: "Blood Donation", category: "Community Outreach", event: "Blood Donation" },
   ];
 
-  const categories = ["All", "Campus Life", "Events", "Academics"];
+  const categories = ["All", "Campus Life", "Events", "Academics", "Community Outreach"];
 
   const filteredImages =
     selectedCategory === "All"
@@ -76,7 +77,7 @@ function Gallery() {
     if (visibleCount < filteredImages.length) {
       setVisibleCount(filteredImages.length); // show all
     } else {
-      setVisibleCount(3); // collapse back to 3
+      setVisibleCount(6); // collapse back to 6
     }
   };
 
@@ -96,7 +97,7 @@ function Gallery() {
             }`}
             onClick={() => {
               setSelectedCategory(category);
-              setVisibleCount(3); // reset visible count on category change
+              setVisibleCount(6); // reset visible count on category change
             }}
           >
             {category}
@@ -125,7 +126,7 @@ function Gallery() {
       </div>
 
       {/* See More / Show Less Button */}
-      {filteredImages.length > 3 && (
+      {filteredImages.length > 6 && (
         <div className="text-center mt-4">
           <button className="btn btn-success px-4" onClick={handleToggleImages}>
             {visibleCount < filteredImages.length ? "See More" : "Show Less"}

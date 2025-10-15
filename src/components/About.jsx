@@ -35,7 +35,7 @@ function About() {
             <h2>Administrative Officers</h2>
             <ul>
               <li><b>DR. ROBERTO F. RAÑOLA JR.</b> – University President</li>
-              <li><b>DR. RENELINA D. MAÑABO</b> – VExecutive Vice President</li>
+              <li><b>DR. RENELINA D. MAÑABO</b> – Executive Vice President</li>
               <li><b>DR. GEORGE V. LAMBOT</b> – Vice President for Academics and Student Services</li>
               <li><b>DR. JESSICA D. REY</b> – Vice President for Planning, Research, and Extension</li>
             </ul>

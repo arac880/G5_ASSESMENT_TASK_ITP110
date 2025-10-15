@@ -1,3 +1,6 @@
+.Home {
+  background-color: #f3faf3;
+}
 .sliderContainer {
   display: flex;
   justify-content: center;
@@ -120,6 +123,14 @@
 
 .dot.active {
   background-color: #00b894;
+}
+
+.container-missionvission {
+  height: 12vh;
+  padding: 60px 6%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 

@@ -34,18 +34,18 @@ function About() {
           <div className="about-box">
             <h2>Administrative Officers</h2>
             <ul>
-              <li><b>DR. RUBY R. ALBA, LPT</b> – University President</li>
-              <li><b>DR. REYNALDO M. SAMAR</b> – Vice President for Academic Affairs</li>
-              <li><b>DR. GINORLYS LUMAPAS</b> – Director for Student Services</li>
-              <li><b>DR. JESSIE R. BITUIN</b> – Director for Research and Extension</li>
+              <li><b>DR. ROBERTO F. RAÑOLA JR.</b> – University President</li>
+              <li><b>DR. RENELINA D. MAÑABO</b> – VExecutive Vice President</li>
+              <li><b>DR. GEORGE V. LAMBOT</b> – Vice President for Academics and Student Services</li>
+              <li><b>DR. JESSICA D. REY</b> – Vice President for Planning, Research, and Extension</li>
             </ul>
           </div>
 
           <div className="about-box">
             <h2>Faculty Members</h2>
             <ul>
-              <li><b>DR. GLENN R. MONTILLA</b> – Dean, College of Education</li>
-              <li><b>ASST. PROF. ALEXANDRO GARCIA</b> – Instructor, College of Computing Studies</li>
+              <li><b>DR. GIMA B. MONTECILLO</b> – Dean, College of Computing Studies</li>
+              <li><b>ASST. PROF. ARCELITO C. QUIATCHON</b> – BSIT Department Chair, College of Computing Studies</li>
             </ul>
           </div>
         </div>
